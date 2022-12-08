@@ -1,5 +1,4 @@
 import {Wrapper,FormKind,SecondWrapper,Img,ThirdWrapper,Input,Button,H2,SecondImg} from './styles/Main.styled'
-import img from '../images/icone-d-image-jaune.png'
 import memes from './data/memes.js';
 import {useState} from 'react';
 
@@ -46,7 +45,7 @@ export default function Main(){
                               <Input  id="one"placeholder='First Text' onChange={(e)=>topchange(e)} />
                               <Input  id="two"placeholder='Second Text' onChange={(e)=>bottomchange(e)} />
                         </SecondWrapper>  
-                        <Button onClick={clicked}><H2>Generate A New Meme Image </H2><SecondImg src={img} /></Button>
+                        <Button onClick={clicked}><H2>Generate A New Meme Image </H2><SecondImg src={`${process.env.PUBLIC_URL}/images/icone-d-image-jaune.png`} /></Button>
                   </FormKind>
             </Wrapper>
       )

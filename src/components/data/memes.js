@@ -76,7 +76,7 @@ memes=[{
       },
 ]
 for(let i=1;i<=memeAmount;i++){
-      memes[i-1].src= `/images/memes/${i}.png`;
+      memes[i-1].src= `${process.env.PUBLIC_URL}/images/memes/${i}.png`;
       memes[i-1].id=i;
 }     
 

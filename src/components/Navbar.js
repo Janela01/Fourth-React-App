@@ -1,13 +1,10 @@
 import {Nav,Wrapper,Img,H2,H3,H4 } from './styles/Navbar.styled'
-import imgOne from '../images/pngwing.com (1).png';
-
-
 export default function Navbar(){
       return(
             <Nav>
                   
                   <Wrapper>
-                        <Img src={imgOne}/>
+                        <Img src={`${process.env.PUBLIC_URL}/images/pngwing.com (1).png`}/>
                         <H2>Meme Generator</H2>
                   </Wrapper>
                   <Wrapper>
